@@ -49,8 +49,9 @@ for (let index = 0; index < paletteColors.length; index += 1) {
 }
 
 // Implementando a mudança de cor dos pixels do board
-function changePixelColor(pixel) {
-  let currentColor = document.querySelector('.selected').style.backgroundColor;
+function changePixelColor(value) {
+  const pixel = value;
+  const currentColor = document.querySelector('.selected').style.backgroundColor;
   pixel.target.style.backgroundColor = currentColor;
 }
 
@@ -61,11 +62,9 @@ for (let index = 0; index < pixelCreate.length; index += 1) {
 // Implementando o botão
 
 function clearBoard() {
-
   for (let index = 0; index < pixelCreate.length; index += 1) {
     pixelCreate[index].style.backgroundColor = 'white';
   }
-
 }
 
 button.addEventListener('click', clearBoard);
