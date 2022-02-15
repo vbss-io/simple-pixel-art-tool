@@ -17,22 +17,6 @@
   border: 1px solid black;
 }
 
-.color1 {
-  background-color: black;
-}
-
-.color2 {
-  background-color: blue;
-}
-
-.color3 {
-  background-color: green;
-}
-
-.color4 {
-  background-color: red;
-}
-
 #pixel-board {
   margin-left: auto;
   margin-right: auto;
