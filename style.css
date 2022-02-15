@@ -1,0 +1,37 @@
+#title {
+  text-align: center;
+}
+
+#color-palette {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.color {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.color1 {
+  /* color: black; */
+  background-color: black;
+}
+
+.color2 {
+  /* color: black; */
+  background-color: blue;
+}
+
+.color3 {
+  /* color: black; */
+  background-color: green;
+}
+
+.color4 {
+  /* color: black; */
+  background-color: red;
+}
