@@ -17,19 +17,6 @@ for (let index = 0; index < pixelDimension; index += 1) {
 const colors = document.querySelectorAll('.color');
 console.log(colors[0].className);
 
-// function selectedVerification(colorToVerificate) {
-//   if (colorToVerificate.className.includes('selected')) {
-//     return true;
-//   }
-//   return false;
-// }
-
-// if (colors[1].className.includes('selected')) {
-//   console.log('tem');
-// } else {
-//   console.log('n');
-// }
-
 function CleanColorSelected() {
   for (let index = 0; index < colors.length; index += 1) {
     if (colors[index].className.includes('selected')) {
@@ -38,15 +25,14 @@ function CleanColorSelected() {
   }
 }
 
-
-function colorSelect(colors) {
-  if (!colors.target.className.includes('selected')) {
+function colorSelect(color) {
+  if (!color.target.className.includes('selected')) {
     console.log('nao tem');
     CleanColorSelected();
-    colors.target.classList.add('selected');
+    color.target.classList.add('selected');
   }
 }
 
 for (let index = 0; index < colors.length; index += 1) {
-  colors[index].addEventListener('click', colorSelect)
+  colors[index].addEventListener('click', colorSelect);
 }
