@@ -4,6 +4,7 @@
 
 #color-palette {
   width: 50%;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -17,21 +18,32 @@
 }
 
 .color1 {
-  /* color: black; */
   background-color: black;
 }
 
 .color2 {
-  /* color: black; */
   background-color: blue;
 }
 
 .color3 {
-  /* color: black; */
   background-color: green;
 }
 
 .color4 {
-  /* color: black; */
   background-color: red;
+}
+
+#pixel-board {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0px;
+}
+
+.pixel {
+  display: inline-block;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
 }
