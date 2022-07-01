@@ -43,7 +43,7 @@ paletteColors[1].style.backgroundColor = setRgbColor();
 paletteColors[2].style.backgroundColor = setRgbColor();
 paletteColors[3].style.backgroundColor = setRgbColor();
 
-pixelBoard.style.width = `${(40 * linePixels) + 40}px`;
+pixelBoard.style.width = `${40 * linePixels + 40}px`;
 
 let pixelsDimension = linePixels * linePixels;
 for (let index = 0; index < pixelsDimension; index += 1) {
@@ -53,9 +53,9 @@ for (let index = 0; index < pixelsDimension; index += 1) {
 
 // Iniciando o pixel board
 function pixelInit(pixelsNumber) {
-  // Concatenado atomaticamente pelo VSCode - Problema Lint
+  // Concatenado automaticamente pelo VSCode - Problema Lint
   lastLinePixel = pixelsNumber;
-  pixelBoard.style.width = `${(40 * pixelsNumber) + 40}px`;
+  pixelBoard.style.width = `${40 * pixelsNumber + 40}px`;
 
   pixelsDimension = pixelsNumber * pixelsNumber;
   for (let index = 0; index < pixelsDimension; index += 1) {
@@ -110,7 +110,7 @@ function clearBoard() {
 
 button.addEventListener('click', clearBoard);
 
-function catchImputValue() {
+function catchInputValue() {
   linePixels = inputValue.value;
   if (linePixels === '') {
     alert('Board inválido!');
@@ -131,4 +131,4 @@ function catchImputValue() {
   }
 }
 
-buttonInput.addEventListener('click', catchImputValue);
+buttonInput.addEventListener('click', catchInputValue);
