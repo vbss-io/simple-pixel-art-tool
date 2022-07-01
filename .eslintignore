@@ -7,4 +7,3 @@ coverage/*
 src/serviceWorker.js
 node_modules/
 reports/
-cypress/
