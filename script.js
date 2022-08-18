@@ -110,24 +110,22 @@ function clearBoard() {
 
 button.addEventListener('click', clearBoard);
 
+function inputBoardSize(lineNumber) {
+  cleanLastBoard();
+  pixelInit(lineNumber);
+  pixelEventsInit();
+}
+
 function catchInputValue() {
   linePixels = inputValue.value;
-  if (linePixels === '') {
+  if (linePixels.length === 0) {
     alert('Board inválido!');
   } else if (linePixels < 5) {
-    linePixels = 5;
-    cleanLastBoard();
-    pixelInit(linePixels);
-    pixelEventsInit();
-  } else if (linePixels > 50) {
-    linePixels = 50;
-    cleanLastBoard();
-    pixelInit(linePixels);
-    pixelEventsInit();
+    alert('Board inválido! Mínimo 5x5');
+  } else if (linePixels > 20) {
+    alert('Board inválido! Limite de 20x20');
   } else {
-    cleanLastBoard();
-    pixelInit(linePixels);
-    pixelEventsInit();
+    inputBoardSize(linePixels);
   }
 }
 
