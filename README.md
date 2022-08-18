@@ -69,7 +69,7 @@ O quadro é composto por pixels, cada pixel se inicia com a cor branca, e confor
 
 Este projeto foi desenvolvido utilizando o linter `ESLint` seguindo as boas práticas definidas na [Trybe](https://www.betrybe.com/).
 
-<a id="intrucoes"></a>
+<a id="instrucoes"></a>
 
 # **Instruções**
 
