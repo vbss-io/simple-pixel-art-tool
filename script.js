@@ -103,8 +103,8 @@ function pixelEventsInit() {
 // Implementando o botão
 function clearBoard() {
   pixelCreate.forEach((pixel) => {
-    const clean = pixel;
-    clean.style.backgroundColor = 'white';
+    const whitePixel = pixel;
+    whitePixel.style.backgroundColor = 'white';
   });
 }
 
