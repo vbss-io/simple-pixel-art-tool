@@ -82,7 +82,6 @@ O projeto não necessita instalação para ser executado. A instalação só é 
 ```
 npm install
 ```
-
 <a id="execucao"></a>
 
 ### **Execução**
