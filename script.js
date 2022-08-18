@@ -64,13 +64,12 @@ function pixelInit(pixelsNumber) {
   }
 }
 
-// Implementando a função de selecionar cor
 function cleanColorSelected() {
-  for (let index = 0; index < paletteColors.length; index += 1) {
-    if (paletteColors[index].className.includes('selected')) {
-      paletteColors[index].classList.remove('selected');
+  paletteColors.forEach((color) => {
+    if (color.className.includes('selected')) {
+      color.classList.remove('selected');
     }
-  }
+  });
 }
 
 function colorSelect(color) {
@@ -80,9 +79,9 @@ function colorSelect(color) {
   }
 }
 
-for (let index = 0; index < paletteColors.length; index += 1) {
-  paletteColors[index].addEventListener('click', colorSelect);
-}
+paletteColors.forEach((color) => {
+  color.addEventListener('click', colorSelect);
+});
 
 // Implementando a mudança de cor dos pixels do board
 function changePixelColor(value) {
@@ -91,21 +90,22 @@ function changePixelColor(value) {
   pixel.target.style.backgroundColor = currentColor;
 }
 
-for (let index = 0; index < pixelCreate.length; index += 1) {
-  pixelCreate[index].addEventListener('click', changePixelColor);
-}
+pixelCreate.forEach((pixel) => {
+  pixel.addEventListener('click', changePixelColor);
+});
 
 function pixelEventsInit() {
-  for (let index = 0; index < pixelCreate.length; index += 1) {
-    pixelCreate[index].addEventListener('click', changePixelColor);
-  }
+  pixelCreate.forEach((pixel) => {
+    pixel.addEventListener('click', changePixelColor);
+  });
 }
 
 // Implementando o botão
 function clearBoard() {
-  for (let index = 0; index < pixelCreate.length; index += 1) {
-    pixelCreate[index].style.backgroundColor = 'white';
-  }
+  pixelCreate.forEach((pixel) => {
+    const clean = pixel;
+    clean.style.backgroundColor = 'white';
+  });
 }
 
 button.addEventListener('click', clearBoard);
