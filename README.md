@@ -20,11 +20,11 @@ Essa é uma ferramenta simples para criar pixel arts, dada uma paleta de cores e
     - [**Limpar Quadro**](#limpar-quadro)
     - [**Quadro**](#quadro)
 - [**Linguagens**](#linguagens)
-- [**Ferramentas**](#ferramentas)
-    - [**Linter**](#linter)
 - [**Instruções**](#instruções)
     - [**Instalação**](#instalação)
     - [**Execução**](#execução)
+- [**Ferramentas**](#ferramentas)
+    - [**Linter**](#linter)
 - [**Observações**](#observações)
 
 # **Recursos Pixel Art Tool**
@@ -49,12 +49,6 @@ O quadro é composto por pixels, cada pixel se inicia com a cor branca, e confor
 
 `HTML` é utilizado para estruturar a aplicação, `CSS` é utilizado para estilizar a aplicação e `JavaScript` é utilizado para executar os recursos da aplicação.
 
-# **Ferramentas**
-
-### **Linter**
-
-Este projeto foi desenvolvido utilizando o linter `ESLint` seguindo as boas práticas definidas na [Trybe](https://www.betrybe.com/).
-
 # **Instruções**
 
 ### **Instalação**
@@ -64,9 +58,26 @@ O projeto não necessita instalação para ser executado. A instalação só é 
 ```
 npm install
 ```
+
 ### **Execução**
 
 O projeto pode ser executado através do arquivo `index.html` que está na raiz do projeto.
+
+# **Ferramentas**
+
+### **Linter**
+
+Este projeto foi desenvolvido utilizando o linter `ESLint` seguindo as boas práticas definidas na [Trybe](https://www.betrybe.com/).
+
+Comando para execução do Lint:
+````
+npm run lint
+````
+
+Caso algum CSS seja adicionado a aplicação é possível rodar o styleLint com:
+````
+npm run lint:styles
+````
 
 # **Observações**
 
